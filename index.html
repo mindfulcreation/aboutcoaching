@@ -1,200 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        header {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            width: 90%;
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-        }
-
-        .bio {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .bio p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        .testimony {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 40px;
-        }
-
-        .testimony blockquote {
-            margin: 0;
-            padding-left: 10px;
-            border-left: 5px solid #000;
-            font-style: italic;
-        }
-
-        .book-now {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .book-now a {
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        .message-board {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .message-board textarea {
-            width: 100%;
-            max-width: 600px;
-            height: 100px;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .message-board button {
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            cursor: pointer;
-        }
-        .message-board form {
-            text-align: left;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-    
-        .message-board label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .message-board input[type="email"],
-        .message-board textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Creation - Coaching for your life</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Profession</p>
-    </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <h1>Mindful Creation</h1>
+    <p>Coaching for mid-career and executives in tech</p>
+  </section>
 
-    <section>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-            <p>Phone: +1234567890</p>
-            <p>Address: Your Address</p>
-        </div>
+  <!-- Statistics Section -->
+  <section id="stats">
+    <h2>200+ Clients Served</h2>
+    <h2>400+ Hours Coached</h2>
+    <h2>Accomplishment Coaching Training Program Certified</h2>
+  </section>
 
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here. Highlight your career, values, and any key accomplishments. Keep it concise and professional.</p>
-        </div>
+  <!-- About Section -->
+  <section id="about">
+    <h2>Daijun Xu</h2>
+    <p>Daijun specializes in coaching individuals in tech, helping professionals from entry to C-suite levels.</p>
+  </section>
 
-        <div class="book-now">
-            <a href="#book">Book Now</a>
-        </div>
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>“帮我明确职业发展现状，对于美国职场文化和行业趋势有一定的认识，然后引导我跳出自己的视角去分析，产生更多的自我反思和自我辩论。” - Yu</p>
+  </section>
 
-        <div class="testimony">
-            <h2>Testimonies</h2>
-            <blockquote>
-                "This is a wonderful testimony from a satisfied client."
-            </blockquote>
-            <blockquote>
-                "Another great comment about your excellent services!"
-            </blockquote>
-        </div>
-
-        <div class="message-board">
-            <h2>Leave a Message</h2>
-            <form action="https://formspree.io/f/xkgwlqbj" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <br>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-
+  <!-- Footer Section -->
+  <footer>
+    <p>©2024 by Mindful Creation</p>
+  </footer>
 </body>
 </html>
