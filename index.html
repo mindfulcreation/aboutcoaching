@@ -11,43 +11,100 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#coachingservice">Life & Career Coaching</a></li>
+        <li><a href="#groupservice">Group Coaching</a></li>
+        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#shop">Shop</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section">
+  <section id="home" class="hero-section hero-background">
     <h1>Mindful Creation</h1>
-    <p>Coaching for mid-career and executives in tech</p>
+    <p>Bilingual Coaching for mid-career and executives in high tech</p>
   </section>
 
   <!-- Statistics Section -->
-  <section id="stats">
-    <h2>200+ Clients Served</h2>
-    <h2>400+ Hours Coached</h2>
-    <h2>Accomplishment Coaching Training Program Certified</h2>
+  <section id="stats" class="stats-section">
+    <div class="stat-item">
+      <h2>200+ Clients Served</h2>
+    </div>
+    <div class="stat-item">
+      <h2>400+ Hours Coached</h2>
+    </div>
+    <div class="stat-item">
+      <h2>Clients from 10+ Tech companies including Google, Amazon, Microsoft, etc.</h2>
+    </div>
+    <div class="stat-item">
+      <h2>Accomplishment Coaching Training Program Certified</h2>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>Daijun Xu</h2>
-    <p>Daijun specializes in coaching individuals in tech, helping professionals from entry to C-suite levels.</p>
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <!-- Left Section (Image) -->
+      <div class="about-image">
+        <img src="images/xdaisy2.JPG" alt="Daijun Xu">
+      </div>
+
+      <!-- Right Section (Text) -->
+      <div class="about-text">
+        <h1>Daijun Xu</h1>
+        <p>Daijun specializes in coaching individuals in tech, helping professionals from entry to C-suite levels.</p>
+    </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <p>“帮我明确职业发展现状，对于美国职场文化和行业趋势有一定的认识，然后引导我跳出自己的视角去分析，产生更多的自我反思和自我辩论。” - Yu</p>
+  <section id="testimonials" class="testimonials-section">
+    <div class="testimonials-container">
+      <button class="arrow left-arrow">&lt;</button>
+      <div class="testimonials-slider">
+        <div class="testimonial">
+          <p>"帮我明确职业发展现状，对于美国职场文化和行业趋势有一定的认识，然后引导我跳出自己的视角去分析，产生更多的自我反思和自我辩论。" - Yu</p>
+        </div>
+        <div class="testimonial">
+          <p>"一位优秀的家庭婚姻life coach，她在我困难的时间段给了我很多倾听和鼓励，帮助我梳理了客观因素和主观意愿，支持我做出人生的重要决定。" - Catherine</p>
+        </div>
+        <div class="testimonial">
+          <p>"鼓励我speak out ，和更多有经验的人交流，培养成长性思维，帮助我打开了职场的新思维和新视野，认识到了有效networking 的重要性。" - Rachel</p>
+        </div>
+        <div class="testimonial">
+          <p>"在我的个人项目中，有效分析了目前求职环境和个人竞争力，采访了行业内或者生活中认识的求职者，在职者，剖析其他人身上值得借鉴的经验。" - Paul</p>
+        </div>
+      </div>
+      <button class="arrow right-arrow">&gt;</button>
+    </div>
   </section>
 
   <!-- Footer Section -->
   <footer>
     <p>©2024 by Mindful Creation</p>
   </footer>
+  <script>
+    const slider = document.querySelector('.testimonials-slider');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    let currentIndex = 0;
+  
+    function slide(direction) {
+      const testimonials = document.querySelectorAll('.testimonial');
+      const maxIndex = testimonials.length - 1;
+      
+      if (direction === 'left') {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : maxIndex;
+      } else {
+        currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+      }
+      
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  
+    leftArrow.addEventListener('click', () => slide('left'));
+    rightArrow.addEventListener('click', () => slide('right'));
+  </script>
 </body>
 </html>
